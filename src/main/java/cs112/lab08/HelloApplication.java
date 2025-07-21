@@ -17,7 +17,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 import java.util.Random;
 
-public class HelloApplication extends Application implements EventHandler<ActionEvent> {
+public class HelloApplication extends Application {
 
     //CONSTANTS
     public final String TITLE = "EChALE STEM Loteria";
@@ -43,7 +43,20 @@ public class HelloApplication extends Application implements EventHandler<Action
     @Override
     public void start(Stage primaryStage) throws IOException {
         drawCardButton = new Button(BUTTON_LABEL);
-        drawCardButton.setOnAction(this);
+        drawCardButton.setOnAction(new EventHandler<ActionEvent>() {
+            @Override
+            public void handle(ActionEvent actionEvent) {
+                if(actionEvent.getSource() == drawCardButton) {
+                    int newCardNum = 0;
+                    do {
+                        newCardNum = rand.nextInt(LOTERIA_CARDS.length);
+                    } while (cardCount == newCardNum);
+                    cardCount = newCardNum;
+                    messageLabel.setText(LOTERIA_CARDS[cardCount].getCardName());
+                    cardImageView.setImage(LOTERIA_CARDS[cardCount].getImage());
+                }
+            }
+        });
         titleLabel = new Label("Welcome to " + TITLE + "!");
         messageLabel = new Label(LOTERIA_CARDS[cardCount].getCardName());
         cardImageView = new ImageView(LOTERIA_CARDS[cardCount].getImage());
@@ -76,18 +89,5 @@ public class HelloApplication extends Application implements EventHandler<Action
 
     public static void main(String[] args) {
         launch(args);
-    }
-
-    @Override
-    public void handle(ActionEvent actionEvent) {
-        if(actionEvent.getSource() == drawCardButton) {
-            int newCardNum = 0;
-            do {
-                newCardNum = rand.nextInt(LOTERIA_CARDS.length);
-            } while (cardCount == newCardNum);
-            cardCount = newCardNum;
-            messageLabel.setText(LOTERIA_CARDS[cardCount].getCardName());
-            cardImageView.setImage(LOTERIA_CARDS[cardCount].getImage());
-        }
     }
 }

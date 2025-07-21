@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="95bceaa6-6d54-4bd6-82cd-0714881f3de9" name="Changes" comment="adding IntelliJ project structure">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="95bceaa6-6d54-4bd6-82cd-0714881f3de9" name="Changes" comment="Completed lab 08">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/cs112/lab08/HelloApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/cs112/lab08/HelloApplication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +124,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1730312740051</updated>
-      <workItem from="1752970981300" duration="8312000" />
+      <workItem from="1752970981300" duration="9541000" />
     </task>
     <task id="LOCAL-00001" summary="adding IntelliJ project structure">
       <option name="closed" value="true" />
@@ -136,7 +134,15 @@
       <option name="project" value="LOCAL" />
       <updated>1730314188727</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Completed lab 08">
+      <option name="closed" value="true" />
+      <created>1753066508691</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1753066508691</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -144,6 +150,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="adding IntelliJ project structure" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding IntelliJ project structure" />
+    <MESSAGE value="Completed lab 08" />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed lab 08" />
   </component>
 </project>
